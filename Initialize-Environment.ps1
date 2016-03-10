@@ -3,7 +3,8 @@
 # Author:    Jourdan Templeton
 # Email:     hello@jourdant.me
 # Modified:  21/07/2015 04:35PM NZDT
-#
+
+
 
 #properties
 #================================================================
@@ -11,13 +12,15 @@ $tesseract_url = "https://nuget.org/api/v2/package/Tesseract"
 $tessdata_url = "https://nuget.org/api/v2/package/tesseract-ocr"
 $itextsharp_url = "https://nuget.org/api/v2/package/iTextSharp"
 
-$tesseract_zip_name = "$PSScriptRoot\tesseract.zip"
-$tessdata_zip_name = "$PSScriptRoot\tessdata.zip"
-$itextsharp_zip_name = "$PSScriptRoot\itextsharp.zip"
+$current = Get-Location
 
-$input_dir_name = "$PSScriptRoot\Input"
-$output_dir_name = "$PSScriptRoot\Output"
-$lib_dir_name = "$PSScriptRoot\Lib"
+$tesseract_zip_name = "$current\tesseract.zip"
+$tessdata_zip_name = "$current\tessdata.zip"
+$itextsharp_zip_name = "$current\itextsharp.zip"
+
+$input_dir_name = "$current\Input"
+$output_dir_name = "$current\Output"
+$lib_dir_name = "$current\Lib"
 #================================================================
 
 #create dir structure
